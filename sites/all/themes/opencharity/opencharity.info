@@ -1,0 +1,20 @@
+name = Open Charity
+description = A one page site theme.
+package = Core
+version = 1.0
+core = 7.x
+
+stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css
+
+screenshot = screenshot.png
+
+regions[header] = Header
+regions[banner] = Banner
+regions[events] = Banner
+regions[content] = Content
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[blog] = Blog
+regions[footer] = Footer
+

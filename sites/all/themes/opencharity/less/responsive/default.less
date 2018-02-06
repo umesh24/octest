@@ -1,0 +1,314 @@
+//This css is used by all the devices and then overridden in other files as per the devices
+
+body {
+  font-family: 'opensans', sans-serif;
+  color: @text-color;
+}
+
+ul, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 20px 20px;
+  a {
+    text-decoration: none;
+    color: @text-color;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.box-menu-item {
+  border: 1px solid #5ebfbd;
+  padding: 5px 10px;
+  a,
+  a.active {
+    color: #5ebfbd;
+    text-transform: uppercase;
+  }
+}
+
+#header {
+  div {
+    display: inline-block;
+  }
+  #logo-floater {
+       width: 30%;
+     }
+  .header-area {
+    float: right;
+    width: auto;
+    .menu {
+      li.about-opencharity,
+      li.blog {
+        display:none;
+      }
+      li {
+        display: inline;
+        a {
+          color: #565659;
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+      li.join-us {
+        padding: 5px 15px;
+        a {
+          color: #5ebfbd;
+        }
+      }
+    }
+  }
+}
+
+.front .block-views > h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.view-home-page-banner {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin: 15px -20px;
+  .front-page-banner-content {
+    position: absolute;
+    padding: 2%;
+    .title {
+      a {
+        font-size: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+    }
+    .body {
+      padding: 1% 12% 2%;
+      font-size: 12px;
+      h2, h3, h4 {
+        font-weight: 300;
+        margin-top: 7px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.view-front-page-events {
+  background-color: #f1f2f5;
+  margin: -5px -20px 10px;
+  padding: 15px;
+  .event-date-label {
+    color: #5bc0c3;
+  }
+  .views-field-field-event-address {
+    font-size: 14px;
+    color: #5a6176;
+    margin-top: 15px;
+  }
+  .view-content {
+    width: 80%;
+    display: inline-block;
+    clear: none;
+  }
+  .view-footer {
+    width: 20%;
+    float: right;
+    background-color: #5bc0c3;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 10px;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 200;
+    }
+  }
+}
+
+div#block-views-get-involved-block,
+div#block-views-out-mission-block,
+div#block-views-our-members-block,
+div#block-views-blog-block {
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-family: 'MuseoSans500', sans-serif;
+}
+
+div#block-views-out-mission-block,
+div#block-views-our-members-block {
+  background-color: #f1f2f5;
+  margin: 0 -20px;
+  padding: 10px;
+}
+
+.view-get-involved {
+  margin-top: 10px;
+  .views-field-field-image img {
+    width: 50%;
+  }
+  .views-field-title span {
+    text-transform: uppercase;
+    margin: 20px 0;
+    display: block;
+  }
+  .views-field-body {
+    font-size: 12px;
+  }
+  .views-field-field-community-link {
+    width: 135px;
+    font-size: 12px;
+    margin: 20px auto;
+    a {
+      font-size: 12px;
+    }
+  }
+}
+
+//accidentally written out instead of our, below code is responsible for our mission block on front page
+.view-out-mission {
+  font-size: 14px;
+  .our-mission-stmt {
+    padding: 30px 0;
+    h4 {
+      margin-top: 30px;
+    }
+  }
+  .view-content {
+    padding-bottom: 30px;
+  }
+  .views-field {
+    padding: 10px;
+  }
+  .views-row {
+    width: 50%;
+    margin: 20px auto;
+  }
+  .our-mission-img {
+    background-color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 100px;
+    margin-bottom: -80px;
+  }
+  .our-mission-text {
+    background-color: #FFF;
+    padding: 15px;
+    .our-mission-text-title {
+      color: #5dc0c9;
+      padding: 60px 0 20px 0;
+    }
+    .our-mission-text-body {
+      line-height: 20px;
+    }
+  }
+}
+
+div#block-views-our-members-block {
+  margin-top: -20px;
+  h2 {
+    border-top: 1px solid #d9dadd;
+    padding-top: 20px;
+    width: 77%;
+    margin: 0 auto;
+  }
+}
+
+.view-our-members {
+  .view-content {
+    display: flex;
+    justify-content: space-evenly;
+    .views-row {
+      margin-bottom: 30px;
+      align-self: center;
+    }
+    .views-field-field-image {
+      width: 100px;
+    }
+  }
+}
+
+.view-blog {
+  font-family: 'opensans', sans-serif;
+  margin-top: 30px;
+  text-align: left;
+  .slick__slider {
+    padding: 0 10%;
+  }
+  .views-field-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f2f5;
+    width: 80%;
+    a {
+      color: #61c0bd;
+    }
+  }
+  .views-field.views-field-body {
+    font-size: 12px;
+    width: 80%;
+    padding-top: 20px;
+    border-bottom: 1px solid #f1f2f5;
+    padding-bottom: 20px;
+  }
+  .views-field-created {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .slick-next:before {
+    content: '\203A';
+    color: #61c0bd;
+  }
+  .slick-prev:before {
+    content: '\2039';
+    color: #61c0bd;
+  }
+}
+
+.region-footer {
+  color: #969eb7;
+  background-color: #454850;
+  margin: 0 -20px;
+  padding: 20px;
+  text-align: center;
+  .social-media {
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-bottom: 20px;
+    li {
+      display: inline-block;
+      color: #5fc0c3;
+      padding-right: 10px;
+    }
+    li.facebook::before {
+      content: "\f09a";
+    }
+    li.twitter::before {
+      content: "\f099";
+    }
+    li.google-plus::before {
+      content: "\f0d5";
+    }
+  }
+  .site-copyright {
+    font-size: 14px;
+    border-top: 1px solid #575b64;
+    width: 80%;
+    padding-top: 20px;
+    margin: 0 auto;
+    strong {
+      color: #5fc0c3;
+      font-weight: 300;
+    }
+  }
+}
